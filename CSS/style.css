@@ -4,6 +4,7 @@ body{
     display: flex;
     align-items:center ;
     justify-content: center;
+    gap: 2em;
     min-height: 100vh;
     background: linear-gradient(120deg, var(--orange-crayola), var(--lapis-lazuli));
 }
@@ -13,7 +14,6 @@ body{
     align-items: center;
     justify-content: space-around;
     background: transparent;
-    margin: 10px;
     padding: 5px;
     border-radius: 5px;
     height: 175px;
@@ -37,4 +37,16 @@ body{
 }
 .relogio span.tempo{
     font-size: 1em;
+}
+@media (max-width: 420px){
+    .relogio{
+        width: 298px;
+    }
+    .relogio div{
+        height: 90px;
+        width: 84px;
+    }
+    .relogio span.tempo{
+        font-size: 0.9em;
+    }
 }
